@@ -1,0 +1,201 @@
+body{
+    background-color: #02010a;
+    font-family: Dancing Script;
+    color: white;
+}
+
+#Contenido{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.Cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #5b7989;
+    border-radius: 10px;
+    animation: CabeceraAnimacion 2s;
+}
+
+@keyframes CabeceraAnimacion{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+.TituloCabecera{
+    text-shadow: 2px 2px 1px black;
+}
+
+.titulo,.Menu{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+a:hover{
+    color: black;
+    list-style: none;
+}
+
+.ContenedorImgCentral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82c3a6;
+}
+
+#imgCentral{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.ContenedorImgSec{
+    display: flex;
+    flex-direction: row;
+    background-color: #d5c75f;
+    border: 1px solid black;
+}
+
+.ContenedorImgSec > #imgSec{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+}
+
+#imgSec{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img[src$='Paisajes.jpg']:hover{
+    transform: rotate(10deg);
+    filter: drop-shadow(20px 10px 4px #82c3a6);
+    border: -1px solid black;
+}
+
+img[src$='Retratos.jpg']:hover{
+    transform: translate(5px, 20px);
+    filter: drop-shadow(20px 10px 4px #82c3a6);
+    border: 2px;
+}
+
+.PiePagina{
+    display: flex;
+    flex-direction: row;
+    background-color: #C6d5c5;
+    color: black;
+    border-radius: -10px;
+}
+
+#Contacto, #Terminos, #RedesSociales, #Derechos{
+    width: 25%;
+    margin: 0  auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.ContenedorGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #d5c75f;
+    border: 1px solid black;
+}
+
+.ContenedorGaleria > #imgGaleria{
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+}
+
+#imgGaleria{
+    width: 33.3%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img[src$='Paisajes1.jpg']{
+    filter: blur(10px);
+}
+
+img[src$='Paisajes2.jpg'], img[src$='Paisajes4.jpg'], img[src$='Paisajes6.jpg']{
+    filter: grayscale(100%);
+}
+
+img[src$='Paisajes3.jpg']{
+    filter: sepia(90%);
+}
+
+img[src$='Retratos1.jpg']{
+    filter: blur(10px);
+}
+
+img[src$='Retratos2.jpg'], img[src$='Retratos4.jpg'], img[src$='Retratos6.jpg']{
+    filter: grayscale(100%);
+}
+
+img[src$='Retratos3.jpg']{
+    filter: sepia(90%);
+}
+
+@media all and (max-width:900px){
+    #Contenido{
+        width: 100%;
+    }
+    .Cabecera, .Menu{
+        display: flex;
+    }
+    .Cabecera{
+        flex-direction: column;
+        align-items: center
+    }
+    .ContenedorImgCentral{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContenedorImgSec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContenedorGaleria{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .PiePagina{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
